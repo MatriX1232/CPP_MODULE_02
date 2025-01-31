@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msolinsk <msolinsk@student.42warsaw.pl>    +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 15:59:11 by msolinsk          #+#    #+#             */
-/*   Updated: 2024/11/07 12:45:35 by msolinsk         ###   ########.fr       */
+/*   Updated: 2025/01/31 17:31:07 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ int main( void )
 
 	std::cout << Fixed::max( a, b ) << std::endl;
 
-	Fixed c( Fixed( 5.05f ) / Fixed( 0 ) );
-	std::cout << c << std::endl;
+	// Fixed c( Fixed( 5.05f ) / Fixed( 0 ) );
+	// std::cout << c << std::endl;
 
 	return (0);
 }

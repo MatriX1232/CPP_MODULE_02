@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msolinsk <msolinsk@student.42warsaw.pl>    +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 15:47:37 by msolinsk          #+#    #+#             */
-/*   Updated: 2024/11/04 16:16:54 by msolinsk         ###   ########.fr       */
+/*   Updated: 2025/01/31 17:28:43 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,12 @@ Fixed::Fixed(const int value)
 	this->_value = value << _fractionalBits;
 }
 
+/*
+	For example:
+	float value = 12.34f;
+	int	ret = 12 * (1 << 8) + 0.34 * (1 << 8) ==>> 12.34 * (1 << 8)
+	1 << 8 == 256
+*/
 Fixed::Fixed(const float value)
 {
 	std::cout << "Float constructor called" << std::endl;
@@ -69,7 +75,7 @@ int Fixed::toInt( void ) const
 
 int Fixed::getRawBits( void ) const
 {
-	std::cout << "getRawBits member function called" << std::endl;
+	// std::cout << "getRawBits member function called" << std::endl;
 	return this->_value;
 }
 

@@ -6,14 +6,15 @@
 /*   By: msolinsk <msolinsk@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 22:19:57 by msolinsk          #+#    #+#             */
-/*   Updated: 2024/11/03 22:58:06 by msolinsk         ###   ########.fr       */
+/*   Updated: 2024/11/04 15:36:12 by msolinsk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FIXED_HPP
 #define FIXED_HPP
 
-class Fixed {
+class Fixed
+{
 	public:
 		Fixed();									// Default constructor
 		Fixed(const Fixed &copy);					// Copy constructor
@@ -24,8 +25,8 @@ class Fixed {
 		void setRawBits( int const raw );
 
 	private:
-		int _value;
-		int _fractionalBits;
+		int					_value;
+		static const int	_fractionalBits = 8;
 };
 
 #endif // FIXED_HPP
